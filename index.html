@@ -46,14 +46,34 @@
                 background-size: 100% 100%;
             }
         }
+        .gradient-animation{
+            height:100vh;
+            padding: 30px 0;
+        }
+        .gradient-animation-reverse{
+            width: 500px;
+        }
+        @media  screen and (max-width:768px) {
+            .gradient-animation-reverse{
+                width: 100%;
+            }
+        }
+
+        @media  screen and (max-height:580px) {
+            .gradient-animation{
+                height:100%;
+            }
+
+        }
+
 
 
     </style>
   </head>
-  <body class="" >
-    <div class="d-grid justify-content-center align-content-center gradient-animation" style="height:100vh;background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); ">
+  <body style="height:100% ;" >
+    <div class="d-grid justify-content-center align-content-center gradient-animation" style="background:linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); ">
         <p style="font-size: 22px;font-weight:600;">Password Generator</p>
-        <div class="shadow-lg p-5 gradient-animation-reverse" style="width:500px; background-color:#ffffff82;">
+        <div class="shadow-lg p-sm-5 p-4 gradient-animation-reverse" style="background-color:#ffffff82;">
             <div class="mb-3 d-flex align-items-center"><input type="text" name="" id="passwordGen" class="rounded w-100 " style="max-width:400px;padding: 8px 12px;border: 2px solid #E84478; outline:none;">
                 <span style="padding:5px; " class="copy-clipboard" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Copy Password">
                     <svg xmlns="http://www.w3.org/2000/svg" width="100" style="max-width:25px;" fill="currentColor" class="bi bi-clipboard-heart" viewBox="0 0 16 16">
